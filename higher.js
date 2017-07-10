@@ -4,8 +4,8 @@ function new_func (func){
     return func1;
 }
 
-function func1(){
-    console.log("func1");
+function func1(v){
+    console.log("value: "+ v);
 }
 var returu_a = new_func();
-returu_a();
+returu_a("test");
