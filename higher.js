@@ -17,6 +17,9 @@ function arrayWalk(data, f){
 function showElement(value, key){
     console.log(key + ':' + value);
 }
+
+function func1(value, key) {
+    console.log('キー(' + key + ') : 値(' + value + ')')
+}
 var ary = [1, 2, 4, 8, 16];
-// arrayWalk(ary, showElement);
-ary.forEach(showElement);
+arrayWalk(ary, func1);
